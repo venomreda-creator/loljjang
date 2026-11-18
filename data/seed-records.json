@@ -1,0 +1,548 @@
+[
+  {
+    "matchId": "KR_7594765088",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 39,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1744354615689,
+    "role": "MIDDLE",
+    "kda": [
+      1,
+      11,
+      2
+    ]
+  },
+  {
+    "matchId": "KR_7594715109",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1744352429067,
+    "role": "TOP",
+    "kda": [
+      5,
+      3,
+      14
+    ]
+  },
+  {
+    "matchId": "KR_7569197337",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 89,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1742627514451,
+    "role": "UTILITY",
+    "kda": [
+      4,
+      10,
+      37
+    ]
+  },
+  {
+    "matchId": "KR_7569144683",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 12,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1742624238963,
+    "role": "UTILITY",
+    "kda": [
+      2,
+      3,
+      10
+    ]
+  },
+  {
+    "matchId": "KR_7569102438",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 14,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1742621896783,
+    "role": "TOP",
+    "kda": [
+      0,
+      6,
+      5
+    ]
+  },
+  {
+    "matchId": "KR_7569053060",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 14,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1742618840655,
+    "role": "TOP",
+    "kda": [
+      3,
+      5,
+      15
+    ]
+  },
+  {
+    "matchId": "KR_7569007456",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 111,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1742616261834,
+    "role": "UTILITY",
+    "kda": [
+      1,
+      5,
+      11
+    ]
+  },
+  {
+    "matchId": "KR_7554244422",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1741503189309,
+    "role": "TOP",
+    "kda": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "matchId": "KR_7554217311",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": false,
+    "queueId": 420,
+    "gameEndAt": 1741501399312,
+    "role": "TOP",
+    "kda": [
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "matchId": "KR_7554156891",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 111,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1741499971505,
+    "role": "UTILITY",
+    "kda": [
+      2,
+      7,
+      13
+    ]
+  },
+  {
+    "matchId": "KR_7552972815",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 98,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1741430016533,
+    "role": "TOP",
+    "kda": [
+      1,
+      6,
+      9
+    ]
+  },
+  {
+    "matchId": "KR_7539778501",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1740578347642,
+    "role": "TOP",
+    "kda": [
+      2,
+      2,
+      9
+    ]
+  },
+  {
+    "matchId": "KR_7539709974",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": true,
+    "queueId": 420,
+    "gameEndAt": 1740575794665,
+    "role": "TOP",
+    "kda": [
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "matchId": "KR_8376715790",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 51,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1789115951456,
+    "role": "BOTTOM",
+    "kda": [
+      17,
+      2,
+      8
+    ]
+  },
+  {
+    "matchId": "KR_8314894780",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 127,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1785057437310,
+    "role": "MIDDLE",
+    "kda": [
+      6,
+      5,
+      7
+    ]
+  },
+  {
+    "matchId": "KR_8309221675",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 103,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1784710380269,
+    "role": "MIDDLE",
+    "kda": [
+      5,
+      4,
+      8
+    ]
+  },
+  {
+    "matchId": "KR_8309177386",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 86,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1784708219756,
+    "role": "TOP",
+    "kda": [
+      12,
+      3,
+      6
+    ]
+  },
+  {
+    "matchId": "KR_8309136223",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 127,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1784705332197,
+    "role": "MIDDLE",
+    "kda": [
+      7,
+      2,
+      12
+    ]
+  },
+  {
+    "matchId": "KR_8240946682",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 103,
+    "win": false,
+    "queueId": 400,
+    "gameEndAt": 1780308984680,
+    "role": "MIDDLE",
+    "kda": [
+      9,
+      14,
+      11
+    ]
+  },
+  {
+    "matchId": "KR_8240904563",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 113,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1780306316512,
+    "role": "JUNGLE",
+    "kda": [
+      7,
+      7,
+      24
+    ]
+  },
+  {
+    "matchId": "KR_8240882009",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 86,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1780303636923,
+    "role": "TOP",
+    "kda": [
+      11,
+      4,
+      6
+    ]
+  },
+  {
+    "matchId": "KR_8240834396",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 53,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1780301644571,
+    "role": "UTILITY",
+    "kda": [
+      2,
+      10,
+      19
+    ]
+  },
+  {
+    "matchId": "KR_8051171629",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 90,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1769420249967,
+    "role": "MIDDLE",
+    "kda": [
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "matchId": "KR_8051128320",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 103,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1769418955900,
+    "role": "MIDDLE",
+    "kda": [
+      6,
+      3,
+      12
+    ]
+  },
+  {
+    "matchId": "KR_8051077066",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 89,
+    "win": false,
+    "queueId": 400,
+    "gameEndAt": 1769416892472,
+    "role": "UTILITY",
+    "kda": [
+      7,
+      9,
+      9
+    ]
+  },
+  {
+    "matchId": "KR_8035586676",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 89,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1768726682997,
+    "role": "UTILITY",
+    "kda": [
+      4,
+      7,
+      12
+    ]
+  },
+  {
+    "matchId": "KR_8035503809",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1768724421834,
+    "role": "TOP",
+    "kda": [
+      8,
+      2,
+      13
+    ]
+  },
+  {
+    "matchId": "KR_8035408565",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 86,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1768722319910,
+    "role": "TOP",
+    "kda": [
+      8,
+      5,
+      9
+    ]
+  },
+  {
+    "matchId": "KR_8006164069",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 90,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1767442258522,
+    "role": "MIDDLE",
+    "kda": [
+      6,
+      4,
+      6
+    ]
+  },
+  {
+    "matchId": "KR_8006050297",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 113,
+    "win": false,
+    "queueId": 400,
+    "gameEndAt": 1767440503981,
+    "role": "JUNGLE",
+    "kda": [
+      4,
+      4,
+      10
+    ]
+  },
+  {
+    "matchId": "KR_8005986804",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 103,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1767437945865,
+    "role": "MIDDLE",
+    "kda": [
+      4,
+      0,
+      1
+    ]
+  },
+  {
+    "matchId": "KR_8005807035",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 711,
+    "win": false,
+    "queueId": 400,
+    "gameEndAt": 1767433192727,
+    "role": "MIDDLE",
+    "kda": [
+      4,
+      8,
+      1
+    ]
+  },
+  {
+    "matchId": "KR_8003670058",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 90,
+    "win": true,
+    "queueId": 400,
+    "gameEndAt": 1767350169559,
+    "role": "MIDDLE",
+    "kda": [
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "matchId": "KR_7556624876",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 39,
+    "win": true,
+    "queueId": 490,
+    "gameEndAt": 1741684234732,
+    "role": "MIDDLE",
+    "kda": [
+      10,
+      14,
+      6
+    ]
+  },
+  {
+    "matchId": "KR_7556611547",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 39,
+    "win": true,
+    "queueId": 490,
+    "gameEndAt": 1741681134854,
+    "role": "MIDDLE",
+    "kda": [
+      6,
+      1,
+      3
+    ]
+  },
+  {
+    "matchId": "KR_7556569820",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 39,
+    "win": true,
+    "queueId": 490,
+    "gameEndAt": 1741680044319,
+    "role": "MIDDLE",
+    "kda": [
+      9,
+      16,
+      6
+    ]
+  },
+  {
+    "matchId": "KR_7516457400",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": true,
+    "queueId": 490,
+    "gameEndAt": 1739196562867,
+    "role": "TOP",
+    "kda": [
+      3,
+      3,
+      11
+    ]
+  },
+  {
+    "matchId": "KR_7449741411",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": false,
+    "queueId": 490,
+    "gameEndAt": 1735719859674,
+    "role": "TOP",
+    "kda": [
+      6,
+      2,
+      2
+    ]
+  },
+  {
+    "matchId": "KR_7449690939",
+    "puuid": "dUHXdQULiwPif9FTag5I2IQmdT7K-R8_xLr1E_OYQPNyMdB01arTuJEm0_1JbO_82-f2mplejxu2zw",
+    "championId": 516,
+    "win": true,
+    "queueId": 490,
+    "gameEndAt": 1735718128711,
+    "role": "TOP",
+    "kda": [
+      6,
+      0,
+      2
+    ]
+  }
+]
