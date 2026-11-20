@@ -45,6 +45,7 @@ const TITLES: Record<string, string> = {
   RATE_LIMIT: 'Riot API 호출 한도 초과',
   PARTIAL: '일부 계정 수집 실패',
   NETWORK: '네트워크 오류',
+  STALE_PUUID: '계정 재연결 필요',
 };
 
 export function SyncErrorAlert({

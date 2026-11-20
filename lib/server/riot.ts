@@ -8,7 +8,9 @@ export type RiotErrorCode =
   | 'RATE_LIMIT'
   | 'UPSTREAM'
   | 'NETWORK'
-  | 'BAD_REQUEST';
+  | 'BAD_REQUEST'
+  /** Riot 이 puuid 를 해독하지 못함 — 계정 이전/통합 등으로 식별자가 바뀐 경우 */
+  | 'STALE_PUUID';
 
 export class RiotError extends Error {
   constructor(
@@ -124,6 +126,18 @@ async function call<T>(url: string, retries = 2): Promise<T> {
     }
     if (res.status === 404) {
       throw new RiotError('NOT_FOUND', 'Riot ID 또는 매치를 찾을 수 없습니다.', 404);
+    }
+    if (res.status === 400) {
+      // Riot 은 계정 이전 등으로 puuid 인코딩이 바뀌면 400 + "Exception decrypting" 을 준다.
+      const body = await res.text().catch(() => '');
+      if (body.includes('Exception decrypting')) {
+        throw new RiotError(
+          'STALE_PUUID',
+          '계정 식별자(puuid)가 만료되었습니다. 계정을 삭제하고 다시 등록해 주세요.',
+          409,
+        );
+      }
+      throw new RiotError('BAD_REQUEST', `Riot API 요청이 거부되었습니다. ${body.slice(0, 160)}`, 400);
     }
     throw new RiotError('UPSTREAM', `Riot API 오류 (${res.status})`, 502);
   }

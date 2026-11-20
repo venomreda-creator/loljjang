@@ -16,6 +16,26 @@ type ResolveResponse =
   | { ok: true; account: Omit<Account, 'region' | 'status'> }
   | { ok: false; code: string; message: string };
 
+/** puuid 재발급이 필요할 때 Riot ID 로 계정을 다시 조회한다. 실패는 null 로 흡수. */
+async function resolveByRiotId(
+  gameName: string,
+  tagLine: string,
+  signal?: AbortSignal,
+): Promise<Omit<Account, 'region' | 'status'> | null> {
+  try {
+    const res = await fetch('/api/account/resolve', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ gameName, tagLine }),
+      signal,
+    });
+    const data = (await res.json()) as ResolveResponse;
+    return data.ok ? data.account : null;
+  } catch {
+    return null;
+  }
+}
+
 export function useCollection(seed: { records: MatchRecord[]; accounts: Account[] }) {
   const [accounts, setAccounts] = useState<Account[]>(seed.accounts);
   const [records, setRecords] = useState<MatchRecord[]>(seed.records);
@@ -67,7 +87,7 @@ export function useCollection(seed: { records: MatchRecord[]; accounts: Account[
       });
 
       try {
-        const result = await syncAll({
+        let result = await syncAll({
           accounts: targets,
           existing: records,
           count,
@@ -75,22 +95,73 @@ export function useCollection(seed: { records: MatchRecord[]; accounts: Account[
           onProgress: setProgress,
         });
 
-        if (result.added.length) {
+        let fresh = [...result.added];
+        let errors = [...result.errors];
+
+        // puuid 가 바뀐 계정(지역 이전 등)은 Riot ID 로 재조회해 기록을 그대로 이어붙인다
+        const staleLabels = new Set(
+          errors.filter((e) => e.code === 'STALE_PUUID').map((e) => e.account),
+        );
+
+        if (staleLabels.size) {
+          const migrated = new Map<string, string>();
+          const relinked = targets.map((a) => ({ ...a }));
+
+          for (let i = 0; i < relinked.length; i++) {
+            const acc = relinked[i];
+            if (!staleLabels.has(`${acc.gameName}#${acc.tagLine}`)) continue;
+
+            const next = await resolveByRiotId(acc.gameName, acc.tagLine, controller.signal);
+            if (next && next.puuid !== acc.puuid) {
+              migrated.set(acc.puuid, next.puuid);
+              relinked[i] = {
+                ...acc,
+                puuid: next.puuid,
+                summonerLevel: next.summonerLevel ?? acc.summonerLevel,
+              };
+            }
+          }
+
+          if (migrated.size) {
+            const remap = (r: MatchRecord): MatchRecord =>
+              migrated.has(r.puuid) ? { ...r, puuid: migrated.get(r.puuid)! } : r;
+
+            setAccounts(relinked);
+            setRecords((prev) => prev.map(remap));
+
+            result = await syncAll({
+              accounts: relinked,
+              existing: records.map(remap),
+              count,
+              signal: controller.signal,
+              onProgress: setProgress,
+            });
+            fresh = [...fresh, ...result.added];
+            errors = [...result.errors];
+          }
+        }
+
+        if (fresh.length) {
           setRecords((prev) => {
             const seen = new Set(prev.map((r) => `${r.matchId}:${r.puuid}`));
-            const fresh = result.added.filter((r) => !seen.has(`${r.matchId}:${r.puuid}`));
-            return fresh.length ? [...prev, ...fresh] : prev;
+            const unique = fresh.filter((r) => {
+              const key = `${r.matchId}:${r.puuid}`;
+              if (seen.has(key)) return false;
+              seen.add(key);
+              return true;
+            });
+            return unique.length ? [...prev, ...unique] : prev;
           });
         }
         setUpdatedAt(Date.now());
 
-        if (result.errors.length) {
+        if (errors.length) {
           setError({
             code: 'PARTIAL',
-            message: result.errors.map((e) => `${e.account}: ${e.message}`).join(' / '),
+            message: errors.map((e) => `${e.account}: ${e.message}`).join(' / '),
           });
         }
-        return { added: result.added.length };
+        return { added: fresh.length };
       } catch (err) {
         if (err instanceof DOMException && err.name === 'AbortError') {
           // 사용자 취소 — 오류 아님
