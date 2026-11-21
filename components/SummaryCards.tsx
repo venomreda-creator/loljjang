@@ -26,17 +26,6 @@ export default function SummaryCards({ summary, periodLabel, championCount }: Pr
         </div>
       </div>
 
-      <div className={`stat-card ${wins > losses ? 'stat-card--win' : ''}`}>
-        <div className="stat-label">승 / 패</div>
-        <div className="stat-value">
-          {wins}
-          <small>승</small>
-        </div>
-        <div className="stat-sub">
-          {losses}패 · 승률 {pct(wins, games)}
-        </div>
-      </div>
-
       <div className={`stat-card ${winRate >= 55 ? 'stat-card--win' : winRate <= 45 && games > 0 ? 'stat-card--loss' : ''}`}>
         <div className="stat-label">승률</div>
         <div className="stat-value">
@@ -44,6 +33,26 @@ export default function SummaryCards({ summary, periodLabel, championCount }: Pr
           <small>%</small>
         </div>
         <div className="stat-sub">{games ? `${games}판 표본` : '아직 데이터가 없습니다'}</div>
+      </div>
+
+      <div className="stat-card">
+        <div className="stat-label">승 / 패</div>
+        <div className="stat-value stat-record">
+          <span className="stat-record-win">
+            {wins}
+            <small>승</small>
+          </span>
+          <span className="stat-record-sep" aria-hidden="true">
+            /
+          </span>
+          <span className="stat-record-loss">
+            {losses}
+            <small>패</small>
+          </span>
+        </div>
+        <div className="stat-sub">
+          {games ? `${games}판 · 패율 ${pct(losses, games)}` : '아직 데이터가 없습니다'}
+        </div>
       </div>
 
       <div className="stat-card">

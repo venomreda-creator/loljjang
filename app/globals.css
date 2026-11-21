@@ -377,6 +377,41 @@ button {
   color: var(--loss-text);
 }
 
+/* 승 / 패 — 두 숫자를 나란히 크고 진하게 */
+.stat-record {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 33px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.stat-record small {
+  margin-left: 2px;
+  font-size: 14px;
+  font-weight: 800;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.stat-record-win {
+  color: var(--win-text);
+  text-shadow: 0 0 18px color-mix(in srgb, var(--win) 25%, transparent);
+}
+
+.stat-record-loss {
+  color: var(--loss-text);
+  text-shadow: 0 0 18px color-mix(in srgb, var(--loss) 25%, transparent);
+}
+
+.stat-record-sep {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
 /* ───────────────────────── toolbar ───────────────────────── */
 .toolbar {
   display: flex;
@@ -1216,6 +1251,12 @@ table.accounts tbody tr:hover {
   }
   .stat-value {
     font-size: 24px;
+  }
+  .stat-record {
+    font-size: 27px;
+  }
+  .stat-record small {
+    font-size: 12px;
   }
   .search-wrap {
     flex: 1 1 100%;
